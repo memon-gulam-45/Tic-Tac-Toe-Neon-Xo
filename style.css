@@ -509,7 +509,7 @@ button:hover {
 
 .seo-content {
   width: min(1100px, 92%);
-  margin: 70px auto 40px;
+  margin: 120px auto 40px;
   padding: 40px 30px;
 
   color: #f5f7ff;
@@ -638,7 +638,7 @@ button:hover {
   .seo-content {
     width: 94%;
     padding: 35px 22px;
-    margin-top: 55px;
+    margin-top: 200px;
   }
 
   .features {
@@ -659,7 +659,7 @@ button:hover {
   .seo-content {
     width: 92%;
 
-    margin: 45px auto 25px;
+    margin: 200px auto 25px;
 
     padding: 30px 17px;
 
@@ -712,6 +712,7 @@ button:hover {
   .seo-content {
     width: 94%;
     padding: 25px 14px;
+    margin-top: 50px;
   }
 
   .seo-content h2 {
