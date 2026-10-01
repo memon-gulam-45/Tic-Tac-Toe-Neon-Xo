@@ -1,34 +1,68 @@
 {
-  "name": "Neon XO",
+  "name": "Tic Tac Toe - Neon XO – Fun 2 Player Tic Tac Toe Game with Meme Sounds",
   "short_name": "Neon XO",
-  "start_url": "./index.html",
+  "description": "A fun 2-player Tic Tac Toe game with neon visuals, funny meme sounds, smooth animations, score tracking, and Android PWA support.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#0a0f23",
   "theme_color": "#A7C6CF",
   "orientation": "portrait",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["games", "entertainment"],
   "icons": [
     {
-      "src": "icons/Icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "/icons/Icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "/icons/Icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "screenshots": [
     {
-      "src": "screenshots/desktop.png",
+      "src": "/screenshots/desktop.png",
       "sizes": "1920x1080",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Neon XO Tic Tac Toe game on desktop"
     },
     {
-      "src": "screenshots/mobile.png",
+      "src": "/screenshots/mobile.png",
       "sizes": "382x661",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Neon XO Tic Tac Toe game on mobile"
     }
   ]
 }
