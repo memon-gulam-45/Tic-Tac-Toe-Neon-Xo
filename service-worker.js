@@ -1,4 +1,4 @@
-const CACHE_NAME = "neon-xo-v4";
+const CACHE_NAME = "neon-xo-v5";
 
 const ASSETS = [
   "./",
