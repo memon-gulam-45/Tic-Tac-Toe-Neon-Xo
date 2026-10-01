@@ -1,38 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neon XO</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <link rel="icon" type="image/png" href="icons/Icon-192.png" />
-    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Tic Tac Toe - Neon XO – Fun 2 Player Tic Tac Toe Game with Meme Sounds
+    </title>
+
     <meta
       name="description"
-      content="Neon XO is a modern Tic Tac Toe game with neon visuals, sound effects, and smooth animations. Play locally with friends."
+      content="Play Neon XO, a fun and modern 2-player Tic Tac Toe game with neon visuals, funny meme sounds, smooth animations, and Android PWA support. Play with friends and install it on your phone."
     />
 
-    <link rel="canonical" href="https://github.com/memon-gulam-45" />
-
-    <meta property="og:title" content="Neon XO – Tic Tac Toe Game" />
     <meta
-      property="og:description"
-      content="A neon-themed Tic Tac Toe game with animations, sounds, and PWA support."
+      name="keywords"
+      content="Tic Tac Toe, Tic Tac Toe game, online Tic Tac Toe, 2 player Tic Tac Toe, multiplayer Tic Tac Toe, neon Tic Tac Toe, funny Tic Tac Toe, meme sounds game, funny meme sounds, XO game, X and O game, browser games, Android Tic Tac Toe, Tic Tac Toe PWA"
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/icons/Icon-192.png" />
 
-    <link rel="manifest" href="manifest.json" />
+    <meta name="author" content="Gulam Mohyudin Memon" />
+
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tictactoe-neonxo.site/" />
+
+    <!-- Theme -->
     <meta name="theme-color" content="#A7C6CF" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons/Icon-192.png" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Apple / Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
+
+    <meta name="apple-mobile-web-app-title" content="Neon XO" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:title"
+      content="Neon XO – Fun 2 Player Tic Tac Toe Game"
+    />
+
+    <meta
+      property="og:description"
+      content="Play Tic Tac Toe with neon visuals, funny meme sounds, smooth animations, and Android PWA support. Challenge your friends and see who gets three in a row!"
+    />
+
+    <meta property="og:url" content="https://tictactoe-neonxo.site/" />
+
+    <meta
+      property="og:image"
+      content="https://tictactoe-neonxo.site/icons/Icon-512.png"
+    />
+
+    <meta property="og:image:alt" content="Neon XO Tic Tac Toe Game" />
+
+    <meta property="og:site_name" content="Neon XO" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="Neon XO – Fun 2 Player Tic Tac Toe Game"
+    />
+
+    <meta
+      name="twitter:description"
+      content="A fun neon Tic Tac Toe game with funny meme sounds, animations, and Android PWA support."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://tictactoe-neonxo.site/icons/Icon-512.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Neon XO",
+        "description": "Neon XO is a fun 2-player Tic Tac Toe game featuring neon visuals, smooth animations, funny meme sounds, and Android PWA support.",
+        "genre": ["Puzzle", "Casual Game", "Board Game"],
+        "gamePlatform": ["Web Browser", "Android"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser, Android",
+        "playMode": "MultiPlayer",
+        "url": "https://tictactoe-neonxo.site/",
+        "image": "https://tictactoe-neonxo.site/icons/Icon-512.png",
+        "author": {
+          "@type": "Person",
+          "name": "Gulam Mohyudin Memon"
+        }
+      }
+    </script>
   </head>
   <body class="gbg">
     <div class="msg-container hide">
@@ -65,7 +155,12 @@
     </div>
 
     <div class="main-container">
-      <h1 class="heading">Neon XO</h1>
+      <h1 class="heading">Tic Tac Toe - Neon XO</h1>
+
+      <p class="game-description">
+        A fun 2-player Tic Tac Toe game with neon visuals, funny meme sounds,
+        smooth animations, and Android support.
+      </p>
 
       <div id="name-container">
         <form class="players" id="players" action="#">
@@ -111,6 +206,75 @@
         <button class="btn hide" id="reset-btn">Reset Game</button>
       </main>
     </div>
+    <section class="seo-content">
+      <h2>Why Play Neon XO?</h2>
+
+      <p>
+        Neon XO is a fun and modern Tic Tac Toe game built for quick two-player
+        matches. Choose your player names, take turns with X and O, and try to
+        get three in a row before your opponent.
+      </p>
+
+      <h2>Game Features</h2>
+
+      <div class="features">
+        <div class="feature">
+          <h3>🎮 2-Player Gameplay</h3>
+          <p>
+            Play Tic Tac Toe with a friend on the same device. Enter both player
+            names and start your match instantly.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>✨ Neon Visuals</h3>
+          <p>
+            Enjoy a modern neon-inspired design with smooth animations that make
+            every move feel more interactive.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>😂 Funny Meme Sounds</h3>
+          <p>
+            Make your matches more entertaining with funny meme audio, sound
+            effects, and hilarious game reactions.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>🏆 Score Tracking</h3>
+          <p>
+            Keep track of player wins and draws while you play multiple rounds
+            with your friends.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>📱 Android PWA</h3>
+          <p>
+            Neon XO is a Progressive Web App that can be installed on compatible
+            devices and works offline directly from your browser.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>⚡ Quick & Lightweight</h3>
+          <p>
+            Start a game quickly in your browser without downloading a large
+            application or creating an account.
+          </p>
+        </div>
+      </div>
+
+      <h2>Play Tic Tac Toe With Friends</h2>
+
+      <p>
+        Whether you want a quick game or several rounds with a friend, Neon XO
+        makes classic X and O gameplay more fun with a modern design,
+        animations, and funny sounds.
+      </p>
+    </section>
 
     <script src="script.js"></script>
   </body>
