@@ -1,4 +1,5 @@
 let players = document.querySelector(".players");
+let seoContent = document.querySelector(".seo-content");
 let startBtn = document.querySelector("#start-btn");
 
 let mainContainer = document.querySelector(".main-container");
@@ -100,6 +101,7 @@ function doStart() {
   storeScoreBoardNames();
 
   players.classList.add("hide");
+  seoContent.classList.add("hide");
 
   container.classList.remove("hide");
   resetBtn.classList.remove("hide");
@@ -253,6 +255,9 @@ function doNewGame() {
   turnIndicator.classList.add("hide");
   mainContainer.classList.remove("hide");
   players.classList.remove("hide");
+
+  seoContent.classList.remove("hide");
+
   container.classList.add("hide");
   resetBtn.classList.add("hide");
 
