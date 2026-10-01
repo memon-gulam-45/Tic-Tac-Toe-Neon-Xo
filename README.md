@@ -3,7 +3,7 @@
 **NEON XO** is a modern, fully responsive **Progressive Web App (PWA)** Tic Tac Toe game built using **HTML, CSS, and Vanilla JavaScript**, featuring a neon-styled UI, glassmorphism design, animated interactions, and fun sound effects.
 
 This project is designed as a **polished frontend game**, suitable for portfolios, UI/UX showcases, and real-world web performance demonstrations.
-
+ 
 ---
 
 ## 🔗 Play Online/Offline
