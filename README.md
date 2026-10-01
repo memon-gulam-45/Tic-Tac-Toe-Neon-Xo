@@ -6,10 +6,10 @@ This project is designed as a **polished frontend game**, suitable for portfolio
 
 ---
 
-## 🔗 Play Online
+## 🔗 Play Online/Offline
 
 👉 **Live Demo:**  
-https://memon-gulam-45.github.io/Neon_XO---Tic_Tac_Toe/
+https://tictactoe-neonxo.site/
 
 👉 **Install as App:**
 
