@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: 'Poppins', system-ui, -apple-system, sans-serif;
+  --bg-color: #0a0f24;
+  --text-color: #ffffff;
+  --board-bg: rgba(16, 23, 53, 0.65);
+  --cell-bg: rgba(255, 255, 255, 0.05);
+  --cell-hover: rgba(255, 255, 255, 0.12);
+  --cell-border: rgba(255, 255, 255, 0.1);
+  --neon-cyan: #00f0ff;
+  --neon-magenta: #ff007f;
+  --neon-yellow: #ffe66d;
+}
+
+.light {
+  --bg-color: #f1f5f9;
+  --text-color: #0f172a;
+  --board-bg: rgba(255, 255, 255, 0.85);
+  --cell-bg: rgba(255, 255, 255, 0.9);
+  --cell-hover: rgba(241, 245, 249, 1);
+  --cell-border: rgba(203, 213, 225, 0.8);
+  --neon-cyan: #0284c7;
+  --neon-magenta: #e11d48;
+  --neon-yellow: #d97706;
+}
+
+body {
+  font-family: var(--font-poppins);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Neon Gradient Animated Background */
+.neon-bg-dark {
+  background: radial-gradient(circle at 50% 20%, rgba(0, 240, 255, 0.12) 0%, transparent 40%),
+              radial-gradient(circle at 80% 80%, rgba(255, 0, 127, 0.12) 0%, transparent 45%),
+              radial-gradient(circle at 10% 70%, rgba(157, 78, 221, 0.14) 0%, transparent 40%),
+              linear-gradient(135deg, #060913 0%, #0a0f24 50%, #0f172a 100%);
+  background-size: 200% 200%;
+}
+
+.neon-bg-light {
+  background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.08) 0%, transparent 45%),
+              radial-gradient(circle at 80% 80%, rgba(225, 29, 72, 0.08) 0%, transparent 45%),
+              radial-gradient(circle at 10% 70%, rgba(147, 51, 234, 0.08) 0%, transparent 40%),
+              linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+  background-size: 200% 200%;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(16, 23, 53, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(203, 213, 225, 0.7);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* Cell Glows */
+.cell-glow-x {
+  color: #ff007f;
+  text-shadow: 0 0 12px rgba(255, 0, 127, 0.8), 0 0 24px rgba(255, 0, 127, 0.4);
+}
+
+.light .cell-glow-x {
+  color: #e11d48;
+  text-shadow: 0 0 8px rgba(225, 29, 72, 0.4);
+}
+
+.cell-glow-o {
+  color: #00f0ff;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.8), 0 0 24px rgba(0, 240, 255, 0.4);
+}
+
+.light .cell-glow-o {
+  color: #0284c7;
+  text-shadow: 0 0 8px rgba(2, 132, 199, 0.4);
+}
+
+/* Winning Pattern Pulse */
+.win-cell-highlight {
+  background: linear-gradient(135deg, rgba(255, 0, 127, 0.35), rgba(0, 240, 255, 0.35)) !important;
+  border-color: #00f0ff !important;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.7), inset 0 0 15px rgba(255, 0, 127, 0.5);
+  animation: winCellPulse 0.9s infinite alternate;
+}
+
+@keyframes winCellPulse {
+  0% {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.6), inset 0 0 10px rgba(255, 0, 127, 0.4);
+  }
+  100% {
+    transform: scale(1.06);
+    box-shadow: 0 0 28px rgba(0, 240, 255, 0.9), inset 0 0 20px rgba(255, 0, 127, 0.7);
+  }
+}
+
+/* Active Turn Badge Pulse */
+.turn-badge-active {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  animation: badgeGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes badgeGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.88;
+    transform: scale(1.02);
+  }
+}
+
+/* Keyboard focus states */
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 2px solid #00f0ff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

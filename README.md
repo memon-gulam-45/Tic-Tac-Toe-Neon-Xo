@@ -1,179 +1,117 @@
-# 🎮 NEON XO — Tic Tac Toe Game (PWA)
+# 🎮 NEON XO — Modern Next.js Tic Tac Toe Platform (PWA & Minimax AI)
 
-**NEON XO** is a modern, fully responsive **Progressive Web App (PWA)** Tic Tac Toe game built using **HTML, CSS, and Vanilla JavaScript**, featuring a neon-styled UI, glassmorphism design, animated interactions, and fun sound effects.
-
-This project is designed as a **polished frontend game**, suitable for portfolios, UI/UX showcases, and real-world web performance demonstrations.
- 
----
-
-## 🔗 Play Online/Offline
-
-👉 **Live Demo:**  
-https://tictactoe-neonxo.site/
-
-👉 **Install as App:**
-
-- Desktop: Click **Install App** from browser address bar
-- Mobile: Add to Home Screen (Chrome / Edge / Brave)
-
-_No app store required._
+**NEON XO** is a modernized, feature-rich **Progressive Web App (PWA)** Tic Tac Toe gaming platform built with **Next.js 15 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**. It combines glowing neon aesthetics and glassmorphism with an intelligent, unbeatable **Minimax AI** opponent, meme sound effects, match tournaments, and offline support.
 
 ---
 
-## 🕹️ How to Play
+## 🔗 Live Game & PWA Installation
 
-- Enter names for **Player 1 (O)** and **Player 2 (X)**
-- Players take turns clicking on the grid
-- First player to align **3 symbols** (row, column, or diagonal) wins
-- If all boxes fill with no winner, the game ends in a draw
-- Use:
-  - **Reset Game** → restart round with same players
-  - **Play Again** → continue with same players & scores
-  - **New Game** → reset scoreboard and enter new player names
+- **Live URL:** [https://tictactoe-neonxo.site/](https://tictactoe-neonxo.site/)
+- **Install as App:**
+  - **Android (Chrome):** Tap "Install App" or "Add to Home screen"
+  - **Desktop (Chrome/Edge/Brave):** Click the install icon in the address bar or the in-game install prompt
+  - **iOS (Safari):** Tap Share &rarr; "Add to Home Screen"
+- **Offline Capable:** Full offline gameplay cached via Progressive Web App Service Worker.
 
 ---
 
-## ✨ Features
+## 🕹️ Game Modes
 
-### 🎨 UI & UX
-
-- Animated **neon gradient background**
-- Glassmorphism cards & overlays
-- Fully responsive (mobile, tablet, desktop)
-- Smooth hover & click animations
-- Animated turn indicator (player name + symbol)
-- Winner highlight with glowing effects
-- Countdown overlay before game actions
-
-### 🔊 Sound Effects
-
-- Click sound on interactions
-- Turn-based sounds (`X` / `O`)
-- **Funny winning sound** (John Cena meme 😄)
-- **Draw sound** (“Moye Moye” 😄)
-- Countdown beeps for resets and transitions
-
-### 🧠 Game Logic
-
-- Accurate win detection (rows, columns, diagonals)
+### 1. Two Players (Local Pass & Play)
+- Custom names for Player X and Player O
+- Turn indicator with glowing visual focus
+- Instant win detection (rows, columns, diagonals)
+- Persistent scoreboard and win percentage tracking
 - Draw detection
-- Scoreboard tracking:
-  - Player 1 wins
-  - Player 2 wins
-  - Draws
-- Clean separation of:
-  - Reset
-  - Play Again
-  - New Game
+
+### 2. One Player vs Computer (AI Opponent)
+- **Player:** X &bull; **Computer (NeonBot):** O
+- 3 Distinct Difficulty Levels:
+  1. **Easy:** Casual play with occasional blunders.
+  2. **Medium:** Balanced heuristic strategy with 85% tactical block rate.
+  3. **Hard:** Powered by the mathematical **Minimax Algorithm**. Evaluates the complete game tree and plays flawlessly. Unbeatable!
+- Natural bot thinking animation with board locking during computation.
 
 ---
 
-## 📱 Progressive Web App (PWA)
+## 🔊 Sound Effects & Meme Audio
 
-NEON XO is fully PWA-enabled:
-
-- ✅ Installable on **desktop & mobile**
-- ✅ Works **offline** after first load
-- ✅ Fast reloads via caching
-- ✅ App-like fullscreen experience
-- ✅ All sounds playable in installed mode
-- ✅ Custom app icon & manifest configuration
-
----
-
-## ⚡ Lighthouse Scores
-
-Achieved **near-perfect Lighthouse performance**:
-
-| Category       | Score |
-| -------------- | ----- |
-| Performance    | 96    |
-| Accessibility  | 100   |
-| Best Practices | 100   |
-| SEO            | 100   |
-
-Optimizations include:
-
-- Preloaded & preconnected Google Fonts (Poppins)
-- Optimized meta tags
-- Responsive images & icons
-- PWA manifest & service worker
-- Clean semantic HTML
+All original audio assets are preserved and enhanced:
+- **Button Clicks:** `sounds/click.mp3`
+- **Player Moves:** `sounds/turnX.mp3` (Player X) and `sounds/turnO.mp3` (Player O)
+- **Match Countdown:** `sounds/count.mp3` (3-2-1 countdown transition)
+- **Victory:** `sounds/win.mp3` (with celebratory confetti particles)
+- **Draw:** `sounds/draw.mp3`
+- **Special Moye Moye Meme Sound:** `sounds/moye-moye.mp3`
+  - *Trigger Condition:* Automatically plays **only** when the human player is defeated by the computer bot in Single-Player mode.
+  - Never plays on draws, in two-player games, or on restarts.
+  - Fully respects the global mute/unmute toggle.
 
 ---
 
-## 🧩 Controls Summary
+## ⚡ Key Features
 
-| Action     | Result                                     |
-| ---------- | ------------------------------------------ |
-| Reset Game | Clears board, keeps players & scores       |
-| Play Again | Clears board, continues score              |
-| New Game   | Clears board, resets score, asks for names |
-
----
-
-## 🛠️ Tech Stack
-
-- **HTML5**
-- **CSS3**
-  - Flexbox
-  - Media Queries
-  - Animations & Transitions
-  - Glassmorphism
-- **JavaScript (Vanilla)**
-  - DOM manipulation
-  - Game state handling
-  - Sound control
-  - Countdown logic
-- **PWA**
-  - Web App Manifest
-  - Service Worker
-  - Offline caching
+- **Neon Cyber Aesthetic:** Glassmorphic UI with glowing cyan and magenta visual hierarchy.
+- **Tournament Series:** Best-of-1, Best-of-3, and Best-of-5 tournament series modes.
+- **Match History:** Persistent match logs tracking mode, winner, result, and timestamp.
+- **Dark & Light Mode:** Neon Dark mode & clean Cyber Light mode toggle with persistent state.
+- **Full Keyboard Accessibility:**
+  - Arrow keys: Navigate cells
+  - Digits 1–9: Instant cell placement
+  - Enter / Space: Select focused cell
+  - Escape: Close any open modal
+  - ARIA Live regions for screen-reader friendly status announcements
+- **Mobile First & Haptic Feedback:** Fluid touch interactions with device vibration feedback on supported mobile devices.
+- **SEO & Structured Data:** Next.js Metadata API, dynamic `sitemap.xml`, `robots.txt`, and Google JSON-LD `VideoGame` / `WebApplication` schemas.
 
 ---
 
-## 📁 Folder Structure
+## 🛠️ Technology Stack
 
-<pre>
-NEON XO - TIC TAC TOE
-├── .vscode
-├── Image
-│   └── logo.png
-├── sounds
-│   ├── click.mp3
-│   ├── count.mp3
-│   ├── draw.mp3
-│   ├── turnO.mp3
-│   ├── turnX.mp3
-│   └── win.mp3
-├── index.html
-├── style.css
-├── script.js
-├── manifest.json
-├── service-worker.js
-└── README.md
-</pre>
+- **Framework:** Next.js 15 (App Router)
+- **Library:** React 19
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (Custom neon & glass design system)
+- **Icons:** Lucide React
+- **Celebration Effects:** Canvas Confetti
+- **PWA:** Web App Manifest & Custom Service Worker (`public/sw.js`)
 
 ---
 
-## 🚀 Project Status
+## 🚀 Getting Started
 
-✅ Core game complete  
-✅ Responsive UI finalized  
-✅ Sound effects integrated  
-✅ Scoreboard implemented  
-✅ PWA enabled  
-✅ Lighthouse optimized
+### Prerequisites
+- Node.js 18+ (tested on Node.js 24)
+- npm or yarn
 
-This project is intentionally kept **simple, fast, and offline-capable**, focusing on **polish, performance, and UX** rather than unnecessary complexity.
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Gulam-Mohyudin/Neon-XO.git
+cd "Neon XO - Updated"
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Build
+```bash
+# Compile and optimize for production
+npm run build
+
+# Start production server
+npm run start
+```
 
 ---
 
 ## 👤 Author
 
 **Gulam Mohyudin Memon**  
-_Full Stack Web Developer_
-
----
-
-> Built with focus on clarity, polish, and user experience — not complexity.
+_Full Stack Web Developer & Software Engineer_  
+Website: [https://tictactoe-neonxo.site/](https://tictactoe-neonxo.site/)

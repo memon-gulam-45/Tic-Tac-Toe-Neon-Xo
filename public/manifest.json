@@ -1,0 +1,69 @@
+{
+  "id": "tictactoe-neonxo-pwa",
+  "name": "Tic Tac Toe - Neon XO – Fun 2 Player & AI Game",
+  "short_name": "Neon XO",
+  "description": "Play Neon XO, a modern 2-player and AI Tic Tac Toe game with glowing neon visuals, funny meme sounds, unbeatable Minimax AI, and PWA offline support.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0f24",
+  "theme_color": "#0a0f24",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["games", "entertainment", "puzzle"],
+  "icons": [
+    {
+      "src": "/icons/Icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Neon XO Tic Tac Toe game on desktop"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "382x661",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Neon XO Tic Tac Toe game on mobile"
+    }
+  ]
+}
